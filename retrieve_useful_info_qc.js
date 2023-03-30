@@ -53,10 +53,10 @@ javascript:(function() {
   
   
   messageEl.innerHTML += 'Apple search:\n'
-    + '/usr/local/itms/bin/iTMSTransporter -u $TRANSPORTER_USER -p $TRANSPORTER_PASSWORD -s KinonationInc -m status -vendor_id ' + sku
+    + 'connection-to-transporter' + sku
     + '\n\n'
     + 'Apple standard download\n'
-    + 'aws --profile production s3 sync s3://kinonation-deliverybucket-1ss0x1mb9657c/apple/' + sku_title + ' ' + sku_title;
+    + 'aws connection to the company' + sku_title + ' ' + sku_title;
 
   messageEl.style.marginBottom = "10px";
   messageEl.style.whiteSpace = "pre-wrap";
